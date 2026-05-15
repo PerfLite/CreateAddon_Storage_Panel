@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NEN",
+    "NFN",
+    "NRN"
+  ],
+  "key": {
+    "N": { "item": "create:copper_sheet" },
+    "E": { "item": "create:electron_tube" },
+    "F": { "item": "create:display_board" },
+    "R": { "item": "create:transmitter" }
+  },
+  "result": {
+    "id": "vaultdisplay:fluid_panel",
+    "count": 2
+  }
+}

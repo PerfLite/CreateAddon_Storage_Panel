@@ -1,0 +1,60 @@
+{
+  "credit": "Vault Display mod",
+  "textures": {
+    "front":    "vaultdisplay:block/storage_panel_front",
+    "side":     "vaultdisplay:block/storage_panel_side",
+    "back":     "vaultdisplay:block/storage_panel_back",
+    "particle": "vaultdisplay:block/storage_panel_side"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 14],
+      "to":   [16, 16, 16],
+      "faces": {
+        "north": { "texture": "#front", "uv": [0, 0, 16, 16] },
+        "south": { "texture": "#back",  "uv": [0, 0, 16, 16] },
+        "up":    { "texture": "#side",  "uv": [0, 0, 16,  2] },
+        "down":  { "texture": "#side",  "uv": [0, 0, 16,  2] },
+        "west":  { "texture": "#side",  "uv": [0, 0,  2, 16] },
+        "east":  { "texture": "#side",  "uv": [0, 0,  2, 16] }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, 180, 0],
+      "translation": [0, 1, 2.6],
+      "scale": [0.4, 0.4, 0.4]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 180, 0],
+      "translation": [0, 1, 2.6],
+      "scale": [0.4, 0.4, 0.4]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, 90, 0],
+      "translation": [1.5, 1, -2],
+      "scale": [0.4, 0.4, 0.4]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 90, 0],
+      "translation": [-1.5, 1, -2],
+      "scale": [0.4, 0.4, 0.4]
+    },
+    "ground": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 2, 0],
+      "scale": [0.30, 0.30, 0.30]
+    },
+    "gui": {
+      "rotation": [0, 140, 0],
+      "translation": [-2.7, 0, 0],
+      "scale": [0.7, 0.7, 0.7]
+    },
+    "fixed": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, -5.0],
+      "scale": [0.8, 0.8, 0.8]
+    }
+  }
+}

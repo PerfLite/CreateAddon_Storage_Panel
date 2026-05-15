@@ -1,0 +1,26 @@
+# hidden files
+.gradle/
+.idea/
+.vscode/
+.gitignore/
+.kiro/
+..gitignore.kate-swp/
+
+# directory
+build/
+gradle/
+runs/
+run/
+libraries/
+logs/
+versions/
+
+# Files
+*.iml
+*.ipr
+*.iws
+*.log
+gradlew
+gradlew.bat
+.DS_Store
+Thumbs.db

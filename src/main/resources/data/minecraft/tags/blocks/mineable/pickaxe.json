@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "vaultdisplay:storage_panel",
+    "vaultdisplay:fluid_panel"
+  ]
+}

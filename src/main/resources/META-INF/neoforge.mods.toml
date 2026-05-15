@@ -1,0 +1,44 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[dependencies.vaultdisplay]]
+    modId = "neoforge"
+    type = "required"
+    versionRange = "[21.1,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.vaultdisplay]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[1.21.1,1.22)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.vaultdisplay]]
+    modId = "create"
+    type = "required"
+    versionRange = "[0.5,)"
+    ordering = "AFTER"
+    side = "BOTH"
+
+[[dependencies.vaultdisplay]]
+    modId = "create_connected"
+    type = "optional"
+    versionRange = "*"
+    ordering = "AFTER"
+    side = "BOTH"
+
+[[mods]]
+    modId = "vaultdisplay"
+    version = "1.0"
+    authors = "PerfLite"
+    logoFile = "logo.png"
+    displayName = "Info Display"
+    description = '''
+Adds information display panels for Create mod storages.
+Storage Panel shows Item Vault fill level, Fluid Panel shows Fluid Tank contents.
+'''
+
+[[mixins]]

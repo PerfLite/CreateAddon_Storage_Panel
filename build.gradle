@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.gradle.userdev' version '7.0.171'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    maven { url "https://maven.createmod.net" }       // Create, Ponder, Flywheel
+    maven { url "https://mvn.devos.one/snapshots" }   // Registrate
+    maven { url "https://maven.tterrag.com/" }        // tterrag
+    maven { url "https://raw.githubusercontent.com/Fuzss/modresources/main/maven" } // Ponder config api
+}
+
+dependencies {
+    implementation "net.neoforged:neoforge:${neo_version}"
+
+    // Create 6.0 для NeoForge 1.21.1
+    compileOnly("com.simibubi.create:create-${minecraft_version}:${create_version}") {
+        transitive = false
+    }
+    compileOnly "com.tterrag.registrate:Registrate:${registrate_version}"
+    compileOnly "net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}"
+
+    // Flywheel — новые координаты в Create 6.0
+    compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
+}
+
+runs {
+    client {
+        workingDirectory project.file('run')
+        systemProperty 'forge.logging.console.level', 'warn'
+        jvmArguments '-Xmx4G'
+        modSource sourceSets.main
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

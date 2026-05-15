@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "face=wall,facing=north": { "model": "vaultdisplay:block/fluid_panel", "y": 0 },
+    "face=wall,facing=south": { "model": "vaultdisplay:block/fluid_panel", "y": 180 },
+    "face=wall,facing=west":  { "model": "vaultdisplay:block/fluid_panel", "y": 270  },
+    "face=wall,facing=east":  { "model": "vaultdisplay:block/fluid_panel", "y": 90 },
+
+    "face=floor,facing=north": { "model": "vaultdisplay:block/fluid_panel", "x": 270, "y": 180 },
+    "face=floor,facing=south": { "model": "vaultdisplay:block/fluid_panel", "x": 270 },
+    "face=floor,facing=west":  { "model": "vaultdisplay:block/fluid_panel", "x": 270, "y": 90  },
+    "face=floor,facing=east":  { "model": "vaultdisplay:block/fluid_panel", "x": 270, "y": 270 },
+
+    "face=ceiling,facing=north": { "model": "vaultdisplay:block/fluid_panel", "x": 90, "y": 180 },
+    "face=ceiling,facing=south": { "model": "vaultdisplay:block/fluid_panel", "x": 90 },
+    "face=ceiling,facing=west":  { "model": "vaultdisplay:block/fluid_panel", "x": 90, "y": 90  },
+    "face=ceiling,facing=east":  { "model": "vaultdisplay:block/fluid_panel", "x": 90, "y": 270 }
+  }
+}

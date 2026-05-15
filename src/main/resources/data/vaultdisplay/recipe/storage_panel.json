@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NEN",
+    "NVN",
+    "NRN"
+  ],
+  "key": {
+    "N": { "item": "create:iron_sheet" },
+    "E": { "item": "create:electron_tube" },
+    "V": { "item": "create:display_board" },
+    "R": { "item": "create:transmitter" }
+  },
+  "result": {
+    "id": "vaultdisplay:storage_panel",
+    "count": 2
+  }
+}
