@@ -5,6 +5,7 @@
 .gitignore/
 .kiro/
 ..gitignore.kate-swp/
+..gitignore.kate-swp
 
 # directory
 build/
