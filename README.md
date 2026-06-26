@@ -59,4 +59,4 @@ The panel reads storage data from the block directly **behind** it (opposite to 
 
 ## License
 
-MIT License — free to use in modpacks.
+GPL-3.0 License — free to use in modpacks.
